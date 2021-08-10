@@ -189,5 +189,7 @@ resource "azurerm_api_management_certificate" "this" {
   api_management_name = azurerm_api_management.this.name
   resource_group_name = var.resource_group_name
 
-  key_vault_secret_id = trimsuffix(data.azurerm_key_vault_certificate.key_vault_certificate[count.index].secret_id, data.azurerm_key_vault_certificate.key_vault_certificate[count.index].version)
+  key_vault_secret_id = trimsuffix(
+    data.azurerm_key_vault_certificate.key_vault_certificate[count.index].secret_id,
+  format("/%s", data.azurerm_key_vault_certificate.key_vault_certificate[count.index].version))
 }
