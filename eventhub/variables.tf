@@ -132,6 +132,17 @@ variable "alerts_enabled" {
   description = "Should Metrics Alert be enabled?"
 }
 
+variable "namespace_authorization_rules" {
+  type = list(object({
+    name   = string
+    listen = bool
+    send   = bool
+    manage = bool
+  }))
+  default     = []
+  description = "Namsespace access policy list"
+}
+
 variable "tags" {
   type = map(any)
 }

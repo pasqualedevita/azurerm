@@ -49,6 +49,20 @@ resource "azurerm_eventhub_namespace" "this" {
   tags = var.tags
 }
 
+
+resource "azurerm_eventhub_namespace_authorization_rule" "authorization_rule" {
+  for_each = var.namespace_authorization_rules
+
+  name                = each.value["name"]
+  namespace_name      = azurerm_eventhub_namespace.this.name
+  resource_group_name = var.resource_group_name
+
+  listen = each.value["listen"]
+  send   = each.value["send"]
+  manage = each.value["manage"]
+
+}
+
 resource "azurerm_eventhub" "events" {
   for_each = local.hubs
 
