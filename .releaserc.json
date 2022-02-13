@@ -8,11 +8,7 @@
     ["@semantic-release/commit-analyzer", {
       "preset": "angular",
       "releaseRules": [
-        {"type": "chore", "release": "patch"},
-        {"type": "docs-major", "release": "major"},
-        {"type": "feat-major", "release": "major"},
-        {"type": "fix-major", "release": "major"},
-        {"type": "chore-major", "release": "major"}
+        {"type": "chore", "release": "patch"}
       ]
     }],
     "@semantic-release/release-notes-generator",
