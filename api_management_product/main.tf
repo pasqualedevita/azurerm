@@ -1,3 +1,5 @@
+
+
 resource "azurerm_api_management_product" "this" {
   product_id            = var.product_id
   resource_group_name   = var.resource_group_name
