@@ -12,6 +12,7 @@ resource "azurerm_api_management_product" "this" {
   published             = var.published
 }
 
+
 resource "azurerm_api_management_product_policy" "this" {
   count = var.policy_xml == null ? 0 : 1
 
