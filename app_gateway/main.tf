@@ -252,6 +252,8 @@ resource "azurerm_application_gateway" "this" {
     max_capacity = var.app_gateway_max_capacity
   }
 
+    
+    
   tags = var.tags
 }
 
