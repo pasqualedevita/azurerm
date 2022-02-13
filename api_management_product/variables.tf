@@ -8,6 +8,8 @@ variable "resource_group_name" {
   description = "The name of the Resource Group in which the API Management Service should be exist."
 }
 
+
+
 variable "api_management_name" {
   type        = string
   description = "The name of the API Management Service."
