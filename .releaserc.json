@@ -14,9 +14,8 @@
         {"type": "chore!", "release": "major"}
       ]
     }],
-    "@semantic-release/github"
     ["@semantic-release/github", {
       "addReleases" : "top"
-    }],
+    }]
   ]
 }
