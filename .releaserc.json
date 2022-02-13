@@ -11,7 +11,7 @@
         {"type": "docs!", "release": "major"},
         {"type": "feat!", "release": "major"},
         {"type": "fix!", "release": "major"},
-        {"type": "chore!", "release": "major"},
+        {"type": "chore!", "release": "major"}
       ]
     }],
     "@semantic-release/github"
