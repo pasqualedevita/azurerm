@@ -5,15 +5,7 @@
   ],
   "ci": false,
   "plugins": [
-    ["@semantic-release/commit-analyzer", {
-      "preset": "angular",
-      "releaseRules": [
-        {"type": "docs!", "release": "major"},
-        {"type": "feat!", "release": "major"},
-        {"type": "fix!", "release": "major"},
-        {"type": "chore!", "release": "major"}
-      ]
-    }],
+    "@semantic-release/commit-analyzer",
     ["@semantic-release/github", {
       "addReleases" : "top"
     }]
