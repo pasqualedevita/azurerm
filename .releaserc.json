@@ -6,8 +6,7 @@
   "ci": false,
   "plugins": [
     "@semantic-release/commit-analyzer",
-    ["@semantic-release/github", {
-      "addReleases" : "top"
-    }]
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/github"
   ]
 }
