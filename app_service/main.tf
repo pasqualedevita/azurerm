@@ -3,6 +3,8 @@
 
 
 
+
+
 resource "azurerm_app_service_plan" "this" {
   count               = var.plan_type == "internal" ? 1 : 0
   name                = var.plan_name
