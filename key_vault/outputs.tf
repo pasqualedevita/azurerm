@@ -13,3 +13,5 @@ output "name" {
 output "resource_group_name" {
   value = azurerm_key_vault.this.resource_group_name
 }
+
+
